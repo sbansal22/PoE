@@ -1,0 +1,96 @@
+EESchema Schematic File Version 4
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L MCU_Module:Arduino_UNO_R3 A1
+U 1 1 5DAF8DD5
+P 9700 2350
+F 0 "A1" H 9700 3528 50  0000 C CNN
+F 1 "Arduino_UNO_R3" H 9700 3437 50  0000 C CNN
+F 2 "Module:Arduino_UNO_R3" H 9850 1300 50  0001 L CNN
+F 3 "https://www.arduino.cc/en/Main/arduinoBoardUno" H 9500 3400 50  0001 C CNN
+	1    9700 2350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Amplifier_Current:AD8202 U1
+U 1 1 5DAF8F7E
+P 6600 1700
+F 0 "U1" H 7041 1746 50  0000 L CNN
+F 1 "AD8202" H 7041 1655 50  0000 L CNN
+F 2 "Package_SO:MSOP-8-1EP_3x3mm_P0.65mm_EP1.68x1.88mm" H 6650 1350 50  0001 L CNN
+F 3 "http://www.analog.com/media/en/technical-documentation/data-sheets/AD8202.pdf" H 7250 1000 50  0001 C CNN
+	1    6600 1700
+	1    0    0    -1  
+$EndComp
+$Comp
+L formula:R_200 R1
+U 1 1 5DAF90AF
+P 8150 1600
+F 0 "R1" H 8220 1646 50  0000 L CNN
+F 1 "R_200" H 8220 1555 50  0000 L CNN
+F 2 "footprints:R_0805_OEM" H 8080 1600 50  0001 C CNN
+F 3 "https://www.seielect.com/Catalog/SEI-RMCF_RMCP.pdf" H 8230 1600 50  0001 C CNN
+F 4 "DK" H 8150 1600 60  0001 C CNN "MFN"
+F 5 "RMCF0805JT200RCT-ND" H 8150 1600 60  0001 C CNN "MPN"
+F 6 "https://www.digikey.com/products/en?keywords=RMCF0805JT200RCT-ND" H 8630 2000 60  0001 C CNN "PurchasingLink"
+	1    8150 1600
+	1    0    0    -1  
+$EndComp
+$Comp
+L formula:C_2.2uF C1
+U 1 1 5DAF91A5
+P 8100 2600
+F 0 "C1" H 8215 2646 50  0000 L CNN
+F 1 "C_2.2uF" H 8215 2555 50  0000 L CNN
+F 2 "footprints:C_0603_1608Metric" H 8138 2450 50  0001 C CNN
+F 3 "http://www.yageo.com/documents/recent/UPY-GPHC_X5R_4V-to-50V_25.pdf" H 8125 2700 50  0001 C CNN
+F 4 "DK" H 8100 2600 60  0001 C CNN "MFN"
+F 5 "311-1451-1-ND" H 8100 2600 60  0001 C CNN "MPN"
+F 6 "https://www.digikey.com/product-detail/en/yageo/CC0603KRX5R6BB225/311-1451-1-ND/2833757" H 8525 3100 60  0001 C CNN "PurchasingLink"
+	1    8100 2600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8150 1450 8850 1450
+Wire Wire Line
+	8850 1450 8850 1750
+Wire Wire Line
+	8850 1750 9200 1750
+Wire Wire Line
+	8150 1750 7000 1750
+Wire Wire Line
+	7000 1750 7000 1700
+Wire Wire Line
+	9200 1850 7100 1850
+Wire Wire Line
+	7100 1850 7100 2200
+Wire Wire Line
+	7100 2200 6600 2200
+Wire Wire Line
+	6600 2200 6600 2100
+Wire Wire Line
+	8100 2450 8900 2450
+Wire Wire Line
+	8900 2450 8900 2150
+Wire Wire Line
+	8900 2150 9200 2150
+Wire Wire Line
+	8100 2750 9100 2750
+Wire Wire Line
+	9100 2750 9100 2450
+Wire Wire Line
+	9100 2450 9200 2450
+$EndSCHEMATC

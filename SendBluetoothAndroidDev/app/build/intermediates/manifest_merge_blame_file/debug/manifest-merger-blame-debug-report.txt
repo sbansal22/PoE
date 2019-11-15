@@ -1,0 +1,68 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.example.sendbluetoothandroiddev"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="23"
+8-->C:\Users\kgoldstein\SendBluetoothAndroidDev\app\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="29" />
+9-->C:\Users\kgoldstein\SendBluetoothAndroidDev\app\src\main\AndroidManifest.xml
+10
+11    <uses-feature android:name="android.hardware.bluetooth" />
+11-->C:\Users\kgoldstein\SendBluetoothAndroidDev\app\src\main\AndroidManifest.xml:4:5-63
+11-->C:\Users\kgoldstein\SendBluetoothAndroidDev\app\src\main\AndroidManifest.xml:4:19-60
+12
+13    <uses-permission android:name="android.permission.BLUETOOTH" />
+13-->C:\Users\kgoldstein\SendBluetoothAndroidDev\app\src\main\AndroidManifest.xml:5:5-68
+13-->C:\Users\kgoldstein\SendBluetoothAndroidDev\app\src\main\AndroidManifest.xml:5:22-65
+14    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+14-->C:\Users\kgoldstein\SendBluetoothAndroidDev\app\src\main\AndroidManifest.xml:6:5-74
+14-->C:\Users\kgoldstein\SendBluetoothAndroidDev\app\src\main\AndroidManifest.xml:6:22-71
+15    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+15-->C:\Users\kgoldstein\SendBluetoothAndroidDev\app\src\main\AndroidManifest.xml:7:5-81
+15-->C:\Users\kgoldstein\SendBluetoothAndroidDev\app\src\main\AndroidManifest.xml:7:22-78
+16    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+16-->C:\Users\kgoldstein\SendBluetoothAndroidDev\app\src\main\AndroidManifest.xml:8:5-79
+16-->C:\Users\kgoldstein\SendBluetoothAndroidDev\app\src\main\AndroidManifest.xml:8:22-76
+17
+18    <application
+18-->C:\Users\kgoldstein\SendBluetoothAndroidDev\app\src\main\AndroidManifest.xml:13:5-30:19
+19        android:allowBackup="true"
+19-->C:\Users\kgoldstein\SendBluetoothAndroidDev\app\src\main\AndroidManifest.xml:14:9-35
+20        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+20-->[androidx.core:core:1.0.1] C:\Users\kgoldstein\.gradle\caches\transforms-2\files-2.1\46da25c3e2ae6308b2227b660caa604d\core-1.0.1\AndroidManifest.xml:22:18-86
+21        android:debuggable="true"
+22        android:icon="@mipmap/ic_launcher"
+22-->C:\Users\kgoldstein\SendBluetoothAndroidDev\app\src\main\AndroidManifest.xml:15:9-43
+23        android:label="@string/app_name"
+23-->C:\Users\kgoldstein\SendBluetoothAndroidDev\app\src\main\AndroidManifest.xml:16:9-41
+24        android:roundIcon="@mipmap/ic_launcher_round"
+24-->C:\Users\kgoldstein\SendBluetoothAndroidDev\app\src\main\AndroidManifest.xml:17:9-54
+25        android:supportsRtl="true"
+25-->C:\Users\kgoldstein\SendBluetoothAndroidDev\app\src\main\AndroidManifest.xml:18:9-35
+26        android:theme="@style/AppTheme" >
+26-->C:\Users\kgoldstein\SendBluetoothAndroidDev\app\src\main\AndroidManifest.xml:19:9-40
+27        <activity
+27-->C:\Users\kgoldstein\SendBluetoothAndroidDev\app\src\main\AndroidManifest.xml:20:9-29:20
+28            android:name="com.example.sendbluetoothandroiddev.MainActivity"
+28-->C:\Users\kgoldstein\SendBluetoothAndroidDev\app\src\main\AndroidManifest.xml:21:13-41
+29            android:label="@string/app_name"
+29-->C:\Users\kgoldstein\SendBluetoothAndroidDev\app\src\main\AndroidManifest.xml:22:13-45
+30            android:theme="@style/AppTheme.NoActionBar" >
+30-->C:\Users\kgoldstein\SendBluetoothAndroidDev\app\src\main\AndroidManifest.xml:23:13-56
+31            <intent-filter>
+31-->C:\Users\kgoldstein\SendBluetoothAndroidDev\app\src\main\AndroidManifest.xml:24:13-28:29
+32                <action android:name="android.intent.action.MAIN" />
+32-->C:\Users\kgoldstein\SendBluetoothAndroidDev\app\src\main\AndroidManifest.xml:25:17-69
+32-->C:\Users\kgoldstein\SendBluetoothAndroidDev\app\src\main\AndroidManifest.xml:25:25-66
+33
+34                <category android:name="android.intent.category.LAUNCHER" />
+34-->C:\Users\kgoldstein\SendBluetoothAndroidDev\app\src\main\AndroidManifest.xml:27:17-77
+34-->C:\Users\kgoldstein\SendBluetoothAndroidDev\app\src\main\AndroidManifest.xml:27:27-74
+35            </intent-filter>
+36        </activity>
+37    </application>
+38
+39</manifest>

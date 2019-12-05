@@ -1,0 +1,69 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Budget</title>
+</head>
+<meta name="viewport" content="width=device-width, initial-scale=1"> 
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {font-family: "Lato", sans-serif}
+.mySlides {display: none}
+</style>
+<body>
+	<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-black w3-card">
+    <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="index.html" class="w3-bar-item w3-button w3-padding-large">HOME</a>
+    <a href="electricaldesign.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">ELECTRICAL DESIGN</a>
+    <a href="mechanicaldesign.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">MECHANICAL DESIGN</a>
+	<a href="softwaredesign.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">SOFTWARE DESIGN</a>
+	<a href="budget.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">BUDGET</a>
+	<a href="acknowledgments.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">ACKNOWLEDGMENTS</a>
+   </div>
+</div>
+
+
+<!-- The Description Section -->
+  <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="description">
+    <h2 class="w3-wide">TEAM BUDGET</h2>
+    <p class="w3-opacity"><i>This page summarizes the expenditures by various subteams and the gifts/provisions made by the college in the development process.</i></p>
+    <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRuR71OPi8le9Uj2HB6O4L9Q3LSa4CxGW4dPt3OHd_B8bOxDXFz3R_kW-rxPp9KilciBgy2t_XbUzDF/pubhtml?widget=true&amp;headers=false" height="300" width="700"></iframe>
+  </div>
+
+	
+<!-- The Contact Section -->
+<!-- The Contact Section -->
+<!-- Footer -->
+<script>
+// Automatic Slideshow - change image every 4 seconds
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 4000);    
+}
+	
+	
+// When the user clicks anywhere outside of the modal, close it
+var modal = document.getElementById('ticketModal');
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+	
+</body>
+</html>

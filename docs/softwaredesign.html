@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <title>Sole Searching</title>
 </head>
-<meta name="viewport" content="width=device-width, initial-scale=1"> 
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -34,44 +34,44 @@ body {font-family: "Lato", sans-serif}
   <div class="mySlides w3-display-container w3-center">
     <img src="" style="width:60%">
     <div class="w3-display-bottom w3-container w3-text-white w3-padding-32 w3-hide-small">
-      <h3>XXX</h3>
-      <p><b>XXX</b></p>   
+      <h3>Software Design</h3>
+      <p><b>For our project, we created an android app that gives you real-time directions using the google maps API. </b></p>
     </div>
   </div>
    <div class="mySlides w3-display-container w3-center">
     <img src="" style="width:60%">
     <div class="w3-display-bottom w3-container w3-text-white w3-padding-32 w3-hide-small">
-      <h3>XXX</h3>
-      <p><b>XXX</b></p>   
+      <h3>Design</h3>
+      <p><b>First, our app asks the user where they want to go. It assumes the user is walking to their destination. Then, it gets directions from google maps and parses the information into specific steps. These steps consist of a turn direction (right or left) and a location. The app continually checks whether the user has reached the location of the nect step then sends a signal over bluetooth to the ardiuno in their shoe that controls the motors. </b></p>
     </div>
   </div>
    <div class="mySlides w3-display-container w3-center">
     <img src="" style="width:60%">
     <div class="w3-display-bottom w3-container w3-text-white w3-padding-32 w3-hide-small">
-      <h3>XXX</h3>
-      <p><b>XXX</b></p>   
+      <h3>Opening Screen</h3>
+      <p><b>The first screen you see when you open the app is a map of where you are. </b></p>
     </div>
   </div>
    <div class="mySlides w3-display-container w3-center">
     <img src="" style="width:60%">
     <div class="w3-display-bottom w3-container w3-text-white w3-padding-32 w3-hide-small">
-      <h3>XXX</h3>
-      <p><b>XXX</b></p>   
+      <h3>Path.</h3>
+      <p><b>Once you choose a destination, the app draws a path from where you are to where you want to go to visually represent the directions</b></p>
     </div>
   </div>
  <div class="mySlides w3-display-container w3-center">
     <img src="" style="width:60%">
     <div class="w3-display-bottom w3-container w3-text-white w3-padding-32 w3-hide-small">
-      <h3>XXX</h3>
-      <p><b>XXX</b></p>   
+      <h3>Turn by Turn Navigation</h3>
+      <p><b>Once you start the directions, you can put your phone away, because your phone will continually check its location against each step of the directions to ensure that it tells you the right thing through the shoe as you go. </b></p>
     </div>
   </div>
 </div>
   <!-- The Description Section -->
   <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="description">
-    <h2 class="w3-wide">SOFTWARE DESIGN</h2>
-    <p class="w3-opacity"><i>XXX</i></p>
-    <p class="w3-justify">XXX</p>
+    <h2 class="w3-wide">Source Code</h2>
+    <p class="w3-justify">For source code, check out our github repository:</p>
+    <a href="https://github.com/sbansal22/PoE" class="w3-bar-item w3-button w3-padding-large w3-hide-small">GITHUB</a>
   </div>
 
 <!-- The Second Section -->
@@ -81,7 +81,7 @@ body {font-family: "Lato", sans-serif}
       <p class="w3-opacity w3-center"><i>XXX</i></p><br>
 	  </div>
   </div>
-	
+
 
 <!-- The Contact Section -->
 <!-- The Contact Section -->
@@ -91,20 +91,19 @@ body {font-family: "Lato", sans-serif}
 // Automatic Slideshow - change image every 4 seconds
 var myIndex = 0;
 carousel();
-
 function carousel() {
   var i;
   var x = document.getElementsByClassName("mySlides");
   for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";  
+    x[i].style.display = "none";
   }
   myIndex++;
-  if (myIndex > x.length) {myIndex = 1}    
-  x[myIndex-1].style.display = "block";  
-  setTimeout(carousel, 4000);    
+  if (myIndex > x.length) {myIndex = 1}
+  x[myIndex-1].style.display = "block";
+  setTimeout(carousel, 4000);
 }
-	
-	
+
+
 // When the user clicks anywhere outside of the modal, close it
 var modal = document.getElementById('ticketModal');
 window.onclick = function(event) {
@@ -113,6 +112,6 @@ window.onclick = function(event) {
   }
 }
 </script>
-	
+
 </body>
 </html>

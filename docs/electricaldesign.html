@@ -61,7 +61,7 @@ body {font-family: "Lato", sans-serif}
   </div>
 
 	<div class="mySlides w3-display-container w3-center">
-    <img src="20191205_230547.jpg" style="width:60%">
+    <img src="20191205_230547.jpg" style="width:46%">
     <div class="w3-display-bottom w3-container w3-text-white w3-padding-32 w3-hide-small">
       <h3>Final Electronics</h3>   
     </div>
@@ -83,14 +83,49 @@ body {font-family: "Lato", sans-serif}
 		<p>
 		<ol type="A">
 	  	<li>Exploring various parts and possibilities - We tested the Bluetooth Module (HC-05) and made a simple <a href="http://ai2.appinventor.mit.edu/#6287392937476096">
-		mobile app</a> using the MIT App Inventor to act as a dummy for the final version of our mobile application. The first goal was to control I/O devices using our phone, and we achieved that during the first sprint. Our proof-of-concept was a working breadboard prototype that we could use to control LEDs using our phones.</li>
-		<li>Thoughts to integration and refinement - Once the breadboard prototypes were all electrically sound, we moved on to putting together proto-board circuit for easier mechanical integration, making the electronics bay more compact, as well as lighter in weight in order to not cause hinderance in the walkability of the shoe. Additional to this, we started making schematics and designing a more formal electrical system. The hardware subteam came to a conclusion that it made a lot of sense to use a PCB to control the electronics - saving space, hardware mass, and adding redundancy to the system. We went through multiple phases of schematic reviews and PCB layout reviews with the teaching team, and shipped out a total of two iterations of two different designs of PCBs.</li>
-		<li>Debugging and iterating - We spent</li>
+		mobile app</a> using the MIT App Inventor to act as a dummy for the final version of our mobile application. The first goal was to control I/O devices using our phone, and we achieved that during the first sprint. Our proof-of-concept was a working breadboard prototype that we could use to control LEDs using our phones.</li><br>
+		<div class="w3-center"><img src="HC-05_zs-040_01_1200.jpg" style="width:60%" alt="Bluetooth" class="w3-center"></div><br>
+		<li>Thoughts to integration and refinement - Once the breadboard prototypes were all electrically sound, we moved on to putting together proto-board circuit for easier mechanical integration, making the electronics bay more compact, as well as lighter in weight in order to not cause hinderance in the walkability of the shoe. Additional to this, we started making schematics and designing a more formal electrical system. The hardware subteam came to a conclusion that it made a lot of sense to use a PCB to control the electronics - saving space, hardware mass, and adding redundancy to the system. We went through multiple phases of schematic reviews and PCB layout reviews with the teaching team, and shipped out a total of two iterations of two different designs of PCBs.</li><br>
+		<div class="w3-center"><img src="pasted image 0.png" style="width:100%" alt="ProtoBoard" class="w3-center"></div><br>
+		<li>Debugging and iterating - We spent the rest of the time strategically: About half of it was spent debugging, testing, and repeating and the rest of it was spent in discussions about safety, manufacturability, comfort, and daily usability of the shoe with stakeholders and faculty. This involved redesign and development of the electronics casing, the location of the electronics embedding, and some components for the printed circuit board, among others.</li><br>
+		<div class="w3-center"><img src="20191205_230547.jpg" style="width:100%" alt="ProtoBoard" class="w3-center"></div><br>
 	  </ol></p>
 	</div>
     </div>
   </div>
+
+ <div class="w3-container w3-white w3-content w3-center w3-padding-64" style="max-width:800px" id="schematic">
+    <h2 class="w3-wide">SCHEMATIC REVIEW</h2>
+    <p class="w3-opacity"><i>A description of the schematic iterations and PCB design</i></p>
+    <p class="w3-justify">The main schematic includes the following sections:
+	<div class="w3-left-align">
+	<ol type="A">
+	<li>Power Conversion: We use a Lithium-ion battery input for the PCB at 3.7V. To step it up to 5V as required by some of the components on the PCB, including the HC-05 bluetooth module, we used a DC-DC Boost converter from Pololu.</li>
+	<li>Bluetooth Module: We used the HC-05 bluetooth module to communicate to the PCB using a mobile application. All the power lines, as well as the I/O lines for this module are embedded in the PCB.</li>
+	<li>Programming Header: Primarily used to program the microprocessor, and to power the board while in programming mode.</li>
+	<li>Programming LEDs: Used as indicators to make the programming process easier to observe and test.</li>
+	<li>Motors: A transducer that translates the electrical signals to vibratory motion for conveying direction information to the user in a handsfree manner.</li>
+	<li>Accelerometer: For sensing the movement of the user to potentially measure activity data or motion-based commands.</li>
+	<li>Computer: We used an ATMEGA 328P-AU to process information from and to control I/O devices. We used an external clock operating at 16MHz, and used the digital I/O pins to communicate with the rest of the hardware.</li>
+	</ol></div>	 
+	</p>
+	<div class="w3-center"><img src="PoEAVR-1.jpg" style="width:100%" alt="ProtoBoard" class="w3-center"></div><br>
+	<div class="w3-justify">This image shows the front copper layer of the PCB, showing all the traces and ground planes that we used in our design. Close to the center of the layout is the processor. Closer to the top edge of the layout are the connectors for interfacing with the motors, and the pads for the supporting hardware. The bluetooth module is mounted on to the bottom left side of the layout.</div>
+	<div class="w3-center"><img src="PoEAVRPCB-1.jpg" style="width:100%" alt="ProtoBoard" class="w3-center"></div><br>
+	<div class="w3-centered">This image is a 3D rendering of the layout from the previous image.</div><br>
+	<div class="w3-center"><img src="Screenshot from 2019-11-18 16-59-00.png" style="width:100%" alt="ProtoBoard" class="w3-center"></div><br>
+  </div>
 	
+<div class="w3-black" id="imports4">
+    <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="safety">
+    <h2 class="w3-wide">SAFETY AND REDUNDANCY</h2>
+	<p class="w3-opacity"><i>XXX</i></p>
+      <div class="w3-left-align">
+		<p>XXX</p>
+	</div>
+    </div>
+  </div>
+
 <script>
 // Automatic Slideshow - change image every 4 seconds
 var myIndex = 0;

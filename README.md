@@ -7,6 +7,14 @@ In order to run our code, download the files mentioned above and use Android Stu
 
 If you want to learn how our code works, download it and read through. It's commented so that you can understand what each section is doing.
 
-<img src="https://raw.githubusercontent.com/kgoldstein21/Dream-Time-Machine/master/DreamImages/team_dream_5xZoom_3a3x3.jpeg" alt="team dream" width="500"/>
+Here's what our app looks like:
+
+<img src="https://github.com/sbansal22/PoE/blob/master/final_app3.jpg" alt="app" width="500"/>
+
+Here's a system diagram of how our app works with the other pieces of our project:
+
+<img src="https://github.com/sbansal22/PoE/blob/master/system_diagram.jpg" alt="app" width="500"/>
+
+If you want to learn more about this project, and how everything works, check out our website: http://poe.olin.edu/2019/solesearching/index.html 
 
 - Sparsh Bansal, Katie Goldstein, Argyris Kriezis, Gabrielle Watkins, Sophie Wu

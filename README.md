@@ -7,4 +7,6 @@ In order to run our code, download the files mentioned above and use Android Stu
 
 If you want to learn how our code works, download it and read through. It's commented so that you can understand what each section is doing.
 
+<img src="https://raw.githubusercontent.com/kgoldstein21/Dream-Time-Machine/master/DreamImages/team_dream_5xZoom_3a3x3.jpeg" alt="team dream" width="500"/>
+
 - Sparsh Bansal, Katie Goldstein, Argyris Kriezis, Gabrielle Watkins, Sophie Wu
